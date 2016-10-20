@@ -5,7 +5,6 @@
  */
 package com.anuz.javabasedconfig.config;
 
-import com.anuz.javabasedconfig.controller.UserController;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.ServletRegistration;
@@ -23,11 +22,11 @@ public class WebAppInitializer implements WebApplicationInitializer {
     @Override
     public void onStartup(ServletContext container) throws ServletException {
       // Create the 'root' Spring application context
-//        AnnotationConfigWebApplicationContext rootContext = new AnnotationConfigWebApplicationContext();
-//        rootContext.register(MvcConfig.class);
+        AnnotationConfigWebApplicationContext rootContext = new AnnotationConfigWebApplicationContext();
+        rootContext.register(AppConfig.class,HibernateConfig.class);
  
         // Manage the lifecycle of the root application context
-//        container.addListener(new ContextLoaderListener(rootContext));
+        container.addListener(new ContextLoaderListener(rootContext));
  
         // Create the dispatcher servlet's Spring application context
         AnnotationConfigWebApplicationContext dispatcherServlet = new AnnotationConfigWebApplicationContext();

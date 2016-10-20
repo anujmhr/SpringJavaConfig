@@ -1,4 +1,9 @@
 /home/anuz/javaworkspace/JavaBasedConfig/src/main/java/com/anuz/javabasedconfig/config/WebAppInitializer.java
+/home/anuz/javaworkspace/JavaBasedConfig/src/main/java/com/anuz/javabasedconfig/config/AppConfig.java
+/home/anuz/javaworkspace/JavaBasedConfig/src/main/java/com/anuz/javabasedconfig/config/HibernateConfig.java
+/home/anuz/javaworkspace/JavaBasedConfig/src/main/java/com/anuz/javabasedconfig/dao/impl/UserDAOImpl.java
 /home/anuz/javaworkspace/JavaBasedConfig/src/main/java/com/anuz/javabasedconfig/controller/UserController.java
+/home/anuz/javaworkspace/JavaBasedConfig/src/main/java/com/anuz/javabasedconfig/service/UserService.java
 /home/anuz/javaworkspace/JavaBasedConfig/src/main/java/com/anuz/javabasedconfig/config/MvcConfig.java
-/home/anuz/javaworkspace/JavaBasedConfig/src/main/java/com/anuz/javabasedconfig/controller/Program.java
+/home/anuz/javaworkspace/JavaBasedConfig/src/main/java/com/anuz/javabasedconfig/entity/User.java
+/home/anuz/javaworkspace/JavaBasedConfig/src/main/java/com/anuz/javabasedconfig/dao/UserDAO.java
