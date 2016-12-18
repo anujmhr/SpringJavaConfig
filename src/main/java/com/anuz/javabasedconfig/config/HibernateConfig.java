@@ -42,10 +42,10 @@ public class HibernateConfig {
     @Bean()
     public DataSource getDataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
-        dataSource.setDriverClassName(driverClassName);
-        dataSource.setUrl(url);
-        dataSource.setUsername(username);
-        dataSource.setPassword(password);
+        dataSource.setDriverClassName("com.mysql.jdbc.Driver");
+        dataSource.setUrl("jdbc:mysql://localhost:3306/java_config_demo");
+        dataSource.setUsername("demo");
+        dataSource.setPassword("demo");
         return dataSource;
     }
 
@@ -69,9 +69,9 @@ public class HibernateConfig {
     @Bean
     public Properties getHibernateProperties() {
         Properties properties = new Properties();
-        properties.put("hibernate.dialect", hibernateDialect);
-        properties.put("hibernate.show_sql", hibernateShowSql);
-        properties.put("hibernate.current_session_context_class", currentSessionContextClass);
+        properties.put("hibernate.dialect", "org.hibernate.dialect.MySQLDialect");
+        properties.put("hibernate.show_sql", "true");
+        properties.put("hibernate.current_session_context_class", "thread");
         return properties;
     }
     

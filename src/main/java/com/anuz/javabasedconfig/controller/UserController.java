@@ -33,7 +33,7 @@ public class UserController {
     
     @RequestMapping(value = "/hello",method = RequestMethod.GET)
     public ModelAndView indexPage(){
-       ModelAndView map=new ModelAndView("index");
+       ModelAndView map=new ModelAndView("admin/index");
        map.addObject("hello", "world");
        return map;
     }
